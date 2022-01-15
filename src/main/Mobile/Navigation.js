@@ -1,13 +1,11 @@
-import React from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useState } from "react";
 import styles from "./Navigation.module.css";
-import NavMenu from "./NavMenu";
 
 const Navigation = (props) => {
   const [menuStatus, setMenuStatus] = useState(false);
 
   const menuOnClickHandler = (event) => {
-    props.upState('sucks')
+    props.upState("sucks");
   };
 
   return (

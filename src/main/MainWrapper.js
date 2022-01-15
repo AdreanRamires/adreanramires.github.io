@@ -1,10 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
 import styles from "./MainWrapper.module.css";
 import Aside from "./Aside/Aside";
 import InnerWrapper from "./InnerWrapper";
 import NavMenu from "./Mobile/NavMenu";
-import { useState } from "react/cjs/react.development";
 
 const MainWrapper = () => {
   const [downState, setDownState] = useState(false);
@@ -17,7 +15,7 @@ const MainWrapper = () => {
 
   return (
     <div className={styles["main-wrapper"]}>
-      <NavMenu stateDown={downState} upState={upStateHandler}/>
+      <NavMenu stateDown={downState} upState={upStateHandler} />
       <Aside />
       <InnerWrapper upState={upStateHandler} />
     </div>

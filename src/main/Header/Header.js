@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
 import ProfileMenu from "./ProfileMenu";
 import SearchBar from "./SearchBar";
 import Navigation from "../Mobile/Navigation";
-import { useState } from "react/cjs/react.development";
 
 const Header = (props) => {
   const [menuStatus, setMenuStatus] = useState(false);
 
   const upStateHanlder = (upState) => {
-    props.upState(upState)
+    props.upState(upState);
   };
 
   return (
