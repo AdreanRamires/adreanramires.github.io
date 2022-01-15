@@ -6,9 +6,10 @@
 .span {
   display: none;
   background: #7cd6ff;
-  height: 4px;
-  width: 33px;
+  height: 3px;
+  width: 30px;
   margin: 2px;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 740px) {
@@ -19,6 +20,6 @@
 
 @media screen and (max-width: 480px) {
   .nav-wrapper {
-    margin-right: 20px;
+    margin-right: 5px;
   }
 }

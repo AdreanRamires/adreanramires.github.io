@@ -114,15 +114,24 @@
     justify-content: center;
   }
 
-  .title {
-    font-size: 18px;
+  .icon-wrapper {
+    width: 45px;
+    height: 45px;
   }
 
-  .value {
+  .icon {
     font-size: 25px;
   }
 
+  .title {
+    font-size: 16px;
+  }
+
+  .value {
+    font-size: 20px;
+  }
+
   .average {
-    font-size: 14px;
+    font-size: 12px;
   }
 }

@@ -1,8 +1,14 @@
 import React from "react";
+import { useState } from "react/cjs/react.development";
 import styles from "./Navigation.module.css";
+import NavMenu from "./NavMenu";
 
 const Navigation = (props) => {
-  const menuOnClickHandler = (event) => {};
+  const [menuStatus, setMenuStatus] = useState(false);
+
+  const menuOnClickHandler = (event) => {
+    props.upState('sucks')
+  };
 
   return (
     <nav className={styles["nav-wrapper"]} onClick={menuOnClickHandler}>
