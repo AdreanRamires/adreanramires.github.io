@@ -1,0 +1,58 @@
+.tips {
+  width: 35%;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.section {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 30px 0 30px;
+}
+
+.article {
+  padding: 20px 10px 20px 10px;
+}
+
+.article:nth-child(2) {
+  border-top: 1px solid #e7e9f9;
+  border-bottom: 1px solid #e7e9f9;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link {
+  color: #82dcd7;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 970px) {
+  .tips {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .tips {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  margin-top: 25px;
+  background: #ecf4f7;
+  padding: 30px 35px 35px 35px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 1330px) {
+  .wrapper {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .wrapper {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 75px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    top: 80px;
+    padding: 10px;
+    margin-top: 0;
+  }
+}

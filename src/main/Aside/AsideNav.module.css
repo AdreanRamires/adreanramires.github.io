@@ -1,0 +1,19 @@
+.aside-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+
+
+@media screen and (max-width: 1330px) {
+  .aside-nav {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .aside-nav {
+    padding: 0;
+  }
+}

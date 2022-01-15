@@ -1,0 +1,11 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 13%;
+}
+
+@media screen and (max-width: 1330px) {
+  .aside {
+    width: 20%;
+  }
+}

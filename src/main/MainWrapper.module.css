@@ -1,0 +1,36 @@
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  background: #ffffff;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+@media screen and (max-width: 1330px) {
+  .main-wrapper {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .main-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .main-wrapper {
+    position: relative;
+    max-width: 470px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-wrapper {
+    max-width: 96%;
+  }
+}

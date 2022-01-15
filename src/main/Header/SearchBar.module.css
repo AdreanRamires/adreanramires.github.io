@@ -1,0 +1,38 @@
+.div {
+  position: relative;
+}
+
+.input {
+  background: #f2f8f8;
+  border: none;
+  padding: 14px 0px 14px 40px;
+  color: #717171;
+  width: 170px;
+  border-radius: 20px;
+  outline: none;
+  transition: 1s;
+}
+:focus {
+  width: 400px;
+}
+
+.i {
+  position: absolute;
+  color: #717171;
+  left: 0;
+  top: 50%;
+  transform: translate(100%, -55%);
+}
+
+@media screen and (max-width: 970px) {
+  .input:focus {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .div {
+    display: none;
+  }
+
+}

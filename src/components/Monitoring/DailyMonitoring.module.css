@@ -1,0 +1,23 @@
+.title {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0 0 15px 5px;
+}
+
+.daily-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 970px) {
+  .daily-cards {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+      margin-top: 5px;
+  }
+}
