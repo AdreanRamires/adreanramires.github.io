@@ -5,17 +5,11 @@ import SearchBar from "./SearchBar";
 import Navigation from "../Mobile/Navigation";
 
 const Header = (props) => {
-  const [menuStatus, setMenuStatus] = useState(false);
-
-  const upStateHanlder = (upState) => {
-    props.upState(upState);
-  };
-
   return (
     <header className={styles.header}>
       <SearchBar />
       <ProfileMenu />
-      <Navigation upState={upStateHanlder} />
+      <Navigation />
     </header>
   );
 };

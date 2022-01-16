@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.span {
+.mobile-menu-lines {
   display: none;
   background: #7cd6ff;
   height: 3px;
@@ -13,13 +13,11 @@
 }
 
 @media screen and (max-width: 740px) {
-  .span {
+  .mobile-menu-lines {
     display: flex;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .nav-wrapper {
-    margin-right: 5px;
-  }
+  
 }

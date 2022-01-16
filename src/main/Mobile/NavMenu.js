@@ -2,22 +2,35 @@ import React, { useState } from "react";
 import styles from "./NavMenu.module.css";
 
 const NavMenu = (props) => {
-  let display = props.stateDown;
-
-  const btnOnClickHandler = () => {
-    props.upState(false);
-  };
+  const visible = props.menuState;
 
   return (
-    <div
-      className={`${styles["nav-menu-wrapper"]} ${
-        display ? `${styles.active}` : ""
-      }`}
+    <nav
+      className={`${styles["nav-menu"]} ${visible ? `${styles.active}` : ""}`}
     >
-      <button className={styles.btn} onClick={btnOnClickHandler}>
-        X
-      </button>
-    </div>
+      <ul className={styles["nav-ul"]}>
+        <li className={styles["nav-li"]}>
+          <i className={`fas fa-home ${styles.icon}`}></i>{" "}
+          <a href="" className={styles.link}>
+            home
+          </a>
+        </li>
+
+        <li className={styles["nav-li"]}>
+          <i className={`fas fa-chart-line ${styles.icon}`}></i>{" "}
+          <a href="" className={styles.link}>
+            daily plan
+          </a>
+        </li>
+
+        <li className={styles["nav-li"]}>
+          <i className={`far fa-calendar-check ${styles.icon}`}></i>{" "}
+          <a href="" className={styles.link}>
+            progress
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
