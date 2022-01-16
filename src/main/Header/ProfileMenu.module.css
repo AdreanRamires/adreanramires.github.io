@@ -41,6 +41,52 @@
   font-weight: 400;
 }
 
+.nav-menu {
+  display: flex;
+  position: absolute;
+  background: white;
+  border: 2px solid #ecf4f7;
+  border-radius: 10px;
+  z-index: 10;
+  top: 60px;
+  right: 20px;
+  padding: 25px 30px 15px 30px;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.nav-li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.nav-li:hover * {
+  color: #de449c;
+}
+
+.icon {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: #717171;
+  margin-right: 25px;
+}
+
+.link {
+  color: black;
+  text-transform: capitalize;
+}
+
+.active {
+  display: flex;
+}
+
 @media screen and (max-width: 970px) {
   .profile-image {
     width: 40px;
