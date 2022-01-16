@@ -7,9 +7,8 @@ const Challenge = () => {
       <p className={styles.title}>Challenge</p>
 
       <section className={styles.content}>
-      <div className={styles.overlay}></div>
+        <div className={styles.overlay}></div>
         <h3 className={styles["content-title"]}>
-          {" "}
           <i className="fas fa-apple-alt"></i> early morning smoothie
         </h3>
 
@@ -36,8 +35,12 @@ const Challenge = () => {
         </article>
 
         <div className={styles["btn-wrapper"]}>
-          <a href="" className={styles["add-btn"]}>add challenge</a>
-          <a href="" className={styles["challenge-btn"]}>challenge friend</a>
+          <a href="" className={styles["add-btn"]}>
+            add challenge
+          </a>
+          <a href="" className={styles["challenge-btn"]}>
+            challenge friend
+          </a>
         </div>
       </section>
     </div>

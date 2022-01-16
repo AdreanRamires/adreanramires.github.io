@@ -8,7 +8,7 @@
 .bell-wrapper {
   display: flex;
   position: relative;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .icon {
@@ -21,11 +21,11 @@
 .status {
   position: absolute;
   display: flex;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background: lime;
   border-radius: 50%;
-  left: 15px;
+  left: 16px;
   top: 5px;
 }
 
@@ -37,12 +37,39 @@
 }
 
 .username {
-  margin-right: 5px;
+  margin-right: 10px;
   font-weight: 400;
 }
 
+.chevron-open {
+  color: #de449c;
+  width: 45px;
+  font-size: 25px;
+  transition: 300ms;
+  transform: translateY(-20px);
+}
+
+.chevron-closed {
+  width: 45px;
+  font-size: 25px;
+  transition: 300ms;
+  animation-name: "pulse";
+  animation-fill-mode: none;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #717171;
+  }
+  100% {
+    color: aqua;
+  }
+}
+
 .nav-menu {
-  display: flex;
+  display: none;
   position: absolute;
   background: white;
   border: 2px solid #ecf4f7;
@@ -69,7 +96,7 @@
   color: #de449c;
 }
 
-.icon {
+.icon-menu {
   text-align: center;
   width: 30px;
   height: 30px;

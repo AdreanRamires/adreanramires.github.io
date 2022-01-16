@@ -91,7 +91,7 @@
 }
 
 .btn-wrapper {
-  margin: 28px 10px 45px 10px;
+  margin: 10px;
   z-index: 1;
 }
 
@@ -179,11 +179,11 @@
     background-position-x: 20%;
     background-size: 420%;
   }
-  
+
   .instructions-wrapper {
     flex-direction: column;
   }
-  
+
   .instructions-ul {
     margin: 20px 15px 15px 15px;
   }
@@ -205,6 +205,4 @@
     width: 100%;
     margin: 10px 0;
   }
-
-
 }
