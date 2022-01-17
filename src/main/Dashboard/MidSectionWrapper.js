@@ -5,10 +5,10 @@ import Tips from "../../components/Tips/Tips";
 
 const MidSectionWrapper = () => {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <Challenge />
       <Tips />
-    </div>
+    </section>
   );
 };
 

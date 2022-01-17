@@ -4,7 +4,7 @@ import image from "../../assets/images/profile-img.jpg";
 
 const ProfileMenu = () => {
   const [menuState, setMenuState] = useState(false);
-
+  
   const menuStateHandler = () => {
     setMenuState((prevState) => {
       return !prevState;
@@ -20,13 +20,14 @@ const ProfileMenu = () => {
       <img src={image} alt="" className={styles["profile-image"]} />
       <p className={styles.username}>Adrean Ramires</p>
       <i
-        className={`${menuState ? `fas fa-times` : 'fas fa-chevron-down'} ${
+        className={`${menuState ? `fas fa-times` : "fas fa-chevron-down"} ${
           menuState ? styles["chevron-open"] : styles["chevron-closed"]
         }`}
         onClick={menuStateHandler}
       ></i>
 
       <nav
+        id="nav-menu"
         className={`${styles["nav-menu"]} ${menuState ? styles.active : ""}`}
       >
         <ul className={styles["nav-ul"]}>

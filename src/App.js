@@ -1,12 +1,12 @@
 import "./App.css";
-
+import React from "react";
 import MainWrapper from "./main/MainWrapper";
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <MainWrapper />
-    </div>
+    </React.Fragment>
   );
 }
 

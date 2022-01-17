@@ -5,10 +5,10 @@ import MidSectionWrapper from "./MidSectionWrapper";
 
 const DashBoardWrapper = () => {
   return (
-    <div className={styles["wrapper"]}>
+    <section className={styles["wrapper"]}>
       <Daily />
       <MidSectionWrapper />
-    </div>
+    </section>
   );
 };
 

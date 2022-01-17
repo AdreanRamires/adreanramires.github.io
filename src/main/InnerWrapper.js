@@ -9,10 +9,10 @@ const InnerWrapper = (props) => {
   };
 
   return (
-    <div className={styles["inner-wrapper"]}>
+    <section className={styles["inner-wrapper"]}>
       <Header upState={upStateHanlder} />
       <DashBoardWrapper />
-    </div>
+    </section>
   );
 };
 

@@ -14,12 +14,12 @@ const Challenge = () => {
 
         <p className={styles.details}>
           Start your day with energy. For breakfast, prepare a powerful and
-          healthy smoothie rich in potassium and vitamic C. It will boost your
+          healthy smoothie rich in potassium and vitamin C. It will boost your
           metabolism.
         </p>
 
         <article className={styles.instructions}>
-          <p className={styles["instructions-title"]}>recepie:</p>
+          <p className={styles["instructions-title"]}>recipe:</p>
           <div className={styles["instructions-wrapper"]}>
             <ul className={styles["instructions-ul"]}>
               <li>130g banana</li>

@@ -5,11 +5,12 @@ import InnerWrapper from "./InnerWrapper";
 import NavMenu from "./Mobile/NavMenu";
 
 const MainWrapper = () => {
+
   return (
-    <div className={styles["main-wrapper"]}>
+    <section className={styles["main-wrapper"]}>
       <Aside />
       <InnerWrapper />
-    </div>
+    </section>
   );
 };
 
