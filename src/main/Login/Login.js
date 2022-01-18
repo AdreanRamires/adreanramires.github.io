@@ -1,9 +1,10 @@
 import React, { useState, Fragment } from "react";
 import styles from "./Login.module.css";
 
-const Login = () => {
+const Login = (props) => {
   const [showPassword, setShowPassword] = useState(false);
   const [signIn, setSignIn] = useState(true);
+  const [signedIn, setSignedIn] = useState(false);
 
   const showPasswordHandler = (e) => {
     setShowPassword((prevState) => {
@@ -17,6 +18,14 @@ const Login = () => {
       return !prevState;
     });
   };
+
+  const onSignedInHandler = (e) => {
+    e.preventDefault()
+    setSignedIn((prevState) => {
+      return !prevState
+    })
+    props.signedIn(signedIn)
+  }
 
   return (
     <section className={styles["login-wrapper"]}>
@@ -46,13 +55,13 @@ const Login = () => {
           {signIn ? "Sign in" : "Sign up"}
         </h2>
 
-        <form action="" className={styles.form}>
+        <form action="" className={styles.form} onSubmit={onSignedInHandler}>
           <div className={styles["input-wrapper"]}>
             <label htmlFor="email" className={styles["input-label"]}>
               Email address
             </label>
             <input
-              type="email"
+              type="text"
               className={styles.input}
               id="email"
               placeholder="Enter your email"
