@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   background: #ecf4f7;
-  width: 1300px;
-  margin: 5% auto 0 auto;
+  width: 960px;
+  margin: 50px auto 0 auto;
   border-radius: 20px;
 }
 
@@ -28,7 +28,7 @@
 
 .side-a-heading {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   color: #1d7197;
   margin-top: 35px;
@@ -37,7 +37,7 @@
 .sign-in-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 50% 0 10% 0;
+  margin-top: 90%;
 }
 
 .registered {
@@ -182,7 +182,7 @@
   }
 
   .sign-in-wrapper {
-    margin: 50% 0 0 30px;
+    margin: 80% 0 0 30px;
   }
 
   .btn {
@@ -199,12 +199,8 @@
     padding: 60px 30px 40px 30px;
   }
 
-  .side-a-heading {
-    font-size: 40px;
-  }
-
   .sign-in-wrapper {
-    margin: 75% 0 0 30px;
+    margin: 110% 0 0 30px;
   }
 
   .login-side-b {
@@ -218,20 +214,16 @@
   }
 
   .side-a-heading {
-    font-size: 30px;
+    font-size: 34px;
     margin-top: 20%;
   }
 
   .sign-in-wrapper {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     margin: 85% 0 0 0;
   }
 
   .sign-in {
-    width: 50%;
-    margin: 0 auto;
     text-align: center;
   }
 
