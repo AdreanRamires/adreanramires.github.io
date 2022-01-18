@@ -3,7 +3,7 @@
   align-items: center;
   background: #ecf4f7;
   width: 960px;
-  margin: 75px auto;
+  margin: 50px auto 0 auto;
   border-radius: 20px;
 }
 
@@ -37,7 +37,7 @@
 .sign-in-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 60%;
+  margin-top: 90%;
 }
 
 .registered {
@@ -84,6 +84,10 @@
   font-size: 16px;
   font-weight: 400;
   margin-top: 10px;
+}
+
+.inactive {
+  display: none;
 }
 
 .input-label {
@@ -178,7 +182,7 @@
   }
 
   .sign-in-wrapper {
-    margin: 50% 0 0 30px;
+    margin: 80% 0 0 30px;
   }
 
   .btn {
@@ -187,12 +191,16 @@
 }
 
 @media screen and (max-width: 970px) {
+  .login-wrapper {
+    margin: 30px auto 0 auto;
+  }
+
   .login-side-a {
     padding: 60px 30px 40px 30px;
   }
 
   .sign-in-wrapper {
-    margin: 85% 0 0 30px;
+    margin: 110% 0 0 30px;
   }
 
   .login-side-b {
@@ -240,29 +248,29 @@
 }
 
 @media screen and (max-width: 481px) {
-    .login-wrapper {
-        flex-direction: column;
-    }
+  .login-wrapper {
+    flex-direction: column;
+    margin: 15px auto 0 auto;
+  }
 
-    .login-side-a {
-        width: 100%;
-    }
+  .login-side-a {
+    width: 100%;
+  }
 
-    .sign-in-wrapper {
-        margin: 0;
-    }
+  .sign-in-wrapper {
+    margin: 0;
+  }
 
-    .side-a-heading {
-        margin-top: 5%;
-    }
+  .side-a-heading {
+    margin-top: 5%;
+  }
 
-    .sign-in-wrapper {
-        margin-bottom: 5%;
-    }
+  .sign-in-wrapper {
+    margin-bottom: 5%;
+  }
 
-    .login-side-b {
-        width: 100%;
-        padding: 10px 20px;
-    }
-
+  .login-side-b {
+    width: 100%;
+    padding: 10px 20px;
+  }
 }
