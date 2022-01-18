@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   background: #ecf4f7;
-  width: 960px;
+  max-width: 1300px;
   margin: 50px auto 0 auto;
   border-radius: 20px;
 }
@@ -28,7 +28,7 @@
 
 .side-a-heading {
   text-align: center;
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 500;
   color: #1d7197;
   margin-top: 35px;
@@ -37,7 +37,7 @@
 .sign-in-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 90%;
+  margin: 265px 0 30px 30px;
 }
 
 .registered {
@@ -169,7 +169,7 @@
 
 @media screen and (max-width: 1330px) {
   .login-wrapper {
-    max-width: 100%;
+    max-width: 960px;
   }
 
   .login-side-a {
@@ -182,7 +182,11 @@
   }
 
   .sign-in-wrapper {
-    margin: 80% 0 0 30px;
+    margin: 320px 0 30px 30px;
+  }
+
+  .side-a-heading {
+    font-size: 40px;
   }
 
   .btn {
@@ -192,6 +196,7 @@
 
 @media screen and (max-width: 970px) {
   .login-wrapper {
+    max-width: 720px;
     margin: 30px auto 0 auto;
   }
 
@@ -200,7 +205,7 @@
   }
 
   .sign-in-wrapper {
-    margin: 110% 0 0 30px;
+    margin: 360px 0 30px 30px;
   }
 
   .login-side-b {
@@ -209,22 +214,27 @@
 }
 
 @media screen and (max-width: 740px) {
+  .login-wrapper {
+    max-width: 470px;
+  }
+
   .login-side-a {
     padding: 40px 15px 25px 15px;
   }
 
   .side-a-heading {
-    font-size: 34px;
+    font-size: 30px;
     margin-top: 20%;
   }
 
   .sign-in-wrapper {
-    text-align: center;
-    margin: 85% 0 0 0;
+    margin: 250px 0 225px 0;
   }
 
+  .registered,
   .sign-in {
     text-align: center;
+    width: 100%;
   }
 
   .login-side-b {
@@ -249,8 +259,9 @@
 
 @media screen and (max-width: 481px) {
   .login-wrapper {
+    max-width: 100%;
     flex-direction: column;
-    margin: 15px auto 0 auto;
+    margin: 15px 15px;
   }
 
   .login-side-a {

@@ -7,9 +7,8 @@ import Login from "./Login/Login";
 const MainWrapper = () => {
   return (
     <section className={styles["main-wrapper"]}>
-      {/* <Aside />
-      <InnerWrapper /> */}
-      <Login />
+      <Aside />
+      <InnerWrapper />
     </section>
   );
 };
