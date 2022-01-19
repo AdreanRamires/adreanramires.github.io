@@ -11,6 +11,7 @@
 .section {
   max-height: 399px;
   overflow: scroll;
+  overflow-x: hidden;
   background: white;
   border-radius: 13px;
   padding: 10px 30px 0 30px;
