@@ -1,13 +1,17 @@
+.wrapper {
+  width: 100%;
+}
+
 .title {
   font-size: 22px;
   font-weight: 400;
   text-transform: capitalize;
-  margin: 0 0 15px 5px;
+  margin-top: 0;
 }
 
 .daily-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 970px) {

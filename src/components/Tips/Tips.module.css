@@ -9,6 +9,8 @@
 }
 
 .section {
+  max-height: 399px;
+  overflow: scroll;
   background: white;
   border-radius: 10px;
   padding: 10px 30px 0 30px;
@@ -39,9 +41,19 @@
   margin-right: 5px;
 }
 
+@media screen and (max-width: 1330px) {
+  .section {
+    max-height: 339px;
+  }
+}
+
 @media screen and (max-width: 970px) {
   .tips {
     width: 100%;
+  }
+
+  .section {
+    max-height: none;
   }
 }
 

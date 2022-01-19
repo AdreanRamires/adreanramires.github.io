@@ -1,9 +1,9 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Login.module.css";
 
 const Login = (props) => {
   const [showPassword, setShowPassword] = useState(false);
-  const [signIn, setSignIn] = useState(true);
+  const [signInPage, setSignInPage] = useState(true);
   const [signedIn, setSignedIn] = useState(false);
 
   const showPasswordHandler = (e) => {
@@ -14,18 +14,18 @@ const Login = (props) => {
 
   const signInSingUpToggleHanlder = (e) => {
     e.preventDefault();
-    setSignIn((prevState) => {
+    setSignInPage((prevState) => {
       return !prevState;
     });
   };
 
   const onSignedInHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setSignedIn((prevState) => {
-      return !prevState
-    })
-    props.signedIn(signedIn)
-  }
+      return !prevState;
+    });
+    props.signedIn(signedIn);
+  };
 
   return (
     <section className={styles["login-wrapper"]}>
@@ -37,14 +37,16 @@ const Login = (props) => {
 
           <div className={styles["sign-in-wrapper"]}>
             <p className={styles.registered}>
-              {signIn ? "Don`t have an account?" : "Already have an account?"}
+              {signInPage
+                ? "Don`t have an account?"
+                : "Already have an account?"}
             </p>
             <a
               href=""
               onClick={signInSingUpToggleHanlder}
               className={styles["sign-in"]}
             >
-              {signIn ? "Sign up" : "Sign in"}
+              {signInPage ? "Sign up" : "Sign in"}
             </a>
           </div>
         </article>
@@ -52,19 +54,19 @@ const Login = (props) => {
 
       <section className={styles["login-side-b"]}>
         <h2 className={styles["side-b-heading"]}>
-          {signIn ? "Sign in" : "Sign up"}
+          {signInPage ? "Sign in" : "Sign up"}
         </h2>
 
         <form action="" className={styles.form} onSubmit={onSignedInHandler}>
           <div className={styles["input-wrapper"]}>
             <label htmlFor="email" className={styles["input-label"]}>
-              Email address
+              Username
             </label>
             <input
               type="text"
               className={styles.input}
               id="email"
-              placeholder="Enter your email"
+              placeholder="Enter your username"
             />
           </div>
 
@@ -80,7 +82,11 @@ const Login = (props) => {
             />
           </div>
 
-          <div className={`${styles["input-wrapper"]} ${signIn ? styles.inactive : '' }`}>
+          <div
+            className={`${styles["input-wrapper"]} ${
+              signInPage ? styles.inactive : ""
+            }`}
+          >
             <label htmlFor="password" className={styles["input-label"]}>
               Repeat password
             </label>
@@ -103,7 +109,7 @@ const Login = (props) => {
           </div>
 
           <button type="submit" className={styles["btn"]}>
-            {signIn ? 'Sign in' : 'Sign up' }
+            {signInPage ? "Sign in" : "Sign up"}
             <i className={`far fa-arrow-alt-circle-right ${styles.icon}`}></i>
           </button>
         </form>

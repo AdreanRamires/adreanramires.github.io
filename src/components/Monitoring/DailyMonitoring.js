@@ -7,15 +7,15 @@ import Sleeping from "./Sleeping";
 
 const DailyMonitoring = () => {
   return (
-    <React.Fragment>
+    <section className={styles.wrapper}>
       <p className={styles.title}>daily monitoring</p>
-      <section className={styles["daily-cards"]}>
+      <article className={styles["daily-cards"]}>
         <Calories />
         <Steps />
         <Exercise />
         <Sleeping />
-      </section>
-    </React.Fragment>
+      </article>
+    </section>
   );
 };
 
