@@ -8,15 +8,21 @@ function App() {
 
   const onSignedInHandler = (props) => {
     setSignedIn((prevState) => {
-      return !prevState
-    })
-  }
+      return !prevState;
+    });
+  };
 
   return (
     <React.Fragment>
-      <h1 style={{ "textAlign": "center", color: "white", 'margin': '10px' }}>
-        Design Alpha Test 1.04
+      <h1 style={{ textAlign: "center", color: "white", margin: "10px" }}>
+        Design Test Version
+        <p style={{ fontSize: "15px" }}>
+          {signedIn
+            ? "Press 'Sign in' to get to next page"
+            : "Refresh the page to go back"}
+        </p>
       </h1>
+
       {signedIn ? <Login signedIn={onSignedInHandler} /> : <MainWrapper />}
     </React.Fragment>
   );
